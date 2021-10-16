@@ -1,7 +1,14 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET home page. */
+const url = 'mongodb://localhost:27017/nucampsite';
+const connect = mongoose.connect(url, {
+    useCreateIndex: true,
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+});
+
+
 connect.then(() => {
 
   console.log('Connected correctly to server');
