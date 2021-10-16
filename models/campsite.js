@@ -5,7 +5,7 @@ require('mongoose-currency').loadType(mongoose);
 const Currency = mongoose.Types.Currency;
 
 
-const campsiteSchema = new Schema({
+const commentSchema = new Schema({
     name: {
         type: String,
         required: true,
